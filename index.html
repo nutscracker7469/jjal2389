@@ -3,29 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>애니메이션 혀과</title>
+    <title>display 속성</title>
     <style>
+        span.a {
+            display: inline;
+            width: 100px;
+            height: 60px;
+            padding: 5px;
+            border: 1px solid rgb(red, green, blue);
+            
+        }
 
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    animation: 5s myanim;
-    animation-iteration-count: 10;
- }
-
- @keyframes myani {
-    0% {background-color: red; left: 0px; top: 0px;}
-    25% {background-color: red; left: 100px; top: 30px;}
-    50% {background-color: yellow; left: 200px; top: 0px;}
-    75% {background-color: blue; left: 300px; top: 30px;}
-    100% {background-color: blue; left: 0px; top: 0px;}
- }
+        .menubar li {
+            display: inline;
+            background-color: yellow;
+            border: 1px solid;
+            border-color: red;
+            margin: 0;
+            padding: .5em;
+        }
     </style>
 </head>
 <body>
-    
+    <ul class="menubar">
+        <li><a href="#">홈으로</a></li>
+        <li><a href="#">회사 소개</a></li>
+        <li><a href="#">제품 소개</a></li>
+        <li><a href="#">질문과 대답</a></li>
+        <li><a href="#">연락처</a></li>
+    </ul>
+
+    <p>
+        <span class="a">INLINE</span>
+        <span class="a">INLINE</span>
+    </p>
+    <p>
+        <span class="b">INLINE_B:LOCK</span>
+        <span class="b">INLINE_B:LOCK</span>
+    </p>
+    <p>
+        <span class="c">INLINE</span>
+        <span class="c">INLINE</span>
+    </p>
 </body>
 </html>
